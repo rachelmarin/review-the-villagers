@@ -32,7 +32,7 @@ class Review {
       deleteLink.addEventListener("click", Review.deleteReview)
     
       byVillager.innerText = `Name: ${this.villager.name}`;
-      img.innerText = this.villager.img_url;
+      img.setAttribute("src", this.villager.img_url )
       h4.innerText = this.rating;
       p.innerText = this.content;
     
