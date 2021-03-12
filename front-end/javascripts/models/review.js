@@ -79,8 +79,9 @@ class Review {
             <input type="number" name="rating" id="rating" min="1" max="10" />
           </div>
         <div class="input-field">
-          <label for="villager">Villager</label>
-          <input type="text" name="villager" id="villager" />
+          <select id="villager">
+            ${villagers.map (villager =>`<option value="${villager.id}">${villager.name}</option>`)}
+          </select>
         </div>
         <div class="input-field">
           <label for="content">Content</label><br />
@@ -147,7 +148,7 @@ class Review {
         review: {
           rating: ratingInput().value,
           content: contentInput().value,
-          villager_attributes: villagerInput().value
+          villager_id: villagerInput().value
         }
       }
     

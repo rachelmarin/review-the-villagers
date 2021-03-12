@@ -22,9 +22,14 @@ function resetFormInputs() {
      Review.renderReviews();
    });
  }
+
+ async function getVillagers() {
+   villagers = await Api.get("/villagers")
+ }
  
  document.addEventListener("DOMContentLoaded", function () {
    Review.getReviews();
+   getVillagers();
    formLinkEvent();
    reviewsLinkEvent();
  });
