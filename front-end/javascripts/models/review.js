@@ -31,7 +31,7 @@ class Review {
       editLink.addEventListener("click", Review.editReview);
       deleteLink.addEventListener("click", Review.deleteReview)
     
-      byVillager.innerText = `By: ${this.villager.name}`;
+      byVillager.innerText = `Name: ${this.villager.name}`;
       img.innerText = this.villager.img_url;
       h4.innerText = this.rating;
       p.innerText = this.content;
@@ -75,7 +75,7 @@ class Review {
       <h3>Create Review</h3>
       <form id="form">
       <div class="input-field">
-            <label for="rating">On a scale of 1-10 how would you rate it?</label>
+            <label for="rating">How would you rate this villager on a scale from 1-10? </label>
             <input type="number" name="rating" id="rating" min="1" max="10" />
           </div>
         <div class="input-field">
@@ -96,7 +96,7 @@ class Review {
       <h3>Edit Review</h3>
       <form id="form" data-id="${review.id}">
         <div class="input-field">
-            <label for="rating">On a scale of 1-10 how would you rate it?</label>
+            <label for="rating">How would you rate this villager on a scale from 1-10?</label>
             <input type="number" name="rating" id="rating" min="1" max="10" value="${review.rating} />
           </div>
         <div class="input-field">
