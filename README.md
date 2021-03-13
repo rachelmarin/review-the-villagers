@@ -29,3 +29,10 @@ To connect to a local host, please type the following command:
 When it has confirmed you are connected to a local host, open the front-end folder than right click on index.html, select reveal in explorer and than open the index link.
 
 You may now create a review!
+
+## License
+License & copyright
+
+Copyright (c) 2021 Rachel Marin
+
+This app is available as open source under the terms of the MIT License.
