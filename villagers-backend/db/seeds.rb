@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-villager_1 = Villager.create(name: "Admiral", img_url:"https://static.wikia.nocookie.net/animalcrossing/images/5/52/NH-Admiral_poster.png/revision/latest/scale-to-width-down/256?cb=20200522013249")
+villager_1 = Villager.create(name: "Admiral", img_url:"https://static.wikia.nocookie.net/animalcrossing/images/5/52/NH-Admiral_poster.png/revision/latest/scale-to-width-down/100?cb=20200522013249")
 
 
 Review.create([
