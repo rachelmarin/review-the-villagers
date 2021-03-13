@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+     body {
+  background-color: rgba(164, 255, 213, 0.849);
+} 
+.bordered {text-align: center;}
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+li {text-align: center;}
+    </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-    <h1>Review The Villagers</h1>
-    <ul>
+    <h1 style="color:rgb(0, 0, 0);">Review The Villagers</h1>
+    <ul style="list-style: none;">
       <li><a href="#" id="form-link">Create Review</a></li>
       <li><a href="#" id="reviews-link">Reviews</a></li>
     </ul>
-    <div id="main"></div>
+    <br><br>
+    <div class="bordered" id="main"></div>
 
     <script src="javascripts/globals.js"></script>
     <script src="javascripts/models/review.js"></script>
