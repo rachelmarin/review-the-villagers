@@ -32,8 +32,8 @@ class Review {
       deleteLink.addEventListener("click", Review.deleteReview)
     
       byVillager.innerText = `Name: ${this.villager.name}`;
-      img.setAttribute("src", this.villager.img_url )
-      h4.innerText = this.rating;
+      img.setAttribute("src", this.villager.img_url)
+      h4.innerText = `${this.rating}/10`;
       p.innerText = this.content;
     
       div.appendChild(h4);
@@ -42,7 +42,10 @@ class Review {
       div.appendChild(byVillager);
       div.appendChild(p);
       div.appendChild(editLink);
+      div.appendChild(document.createElement("br"));
       div.appendChild(deleteLink);
+      div.appendChild(document.createElement("br"));
+
     
       reviewsDiv.appendChild(div);
     }
