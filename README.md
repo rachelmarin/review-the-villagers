@@ -5,7 +5,7 @@ This app allows you to review and rate your favorite and not so favorite "Animal
 Have fun!
 
 ## Start up
-To use this application please fork and clone this repository and open in your machine's text editor.
+To use this application please clone this repository and open in your machine's text editor.
 
 First cd into villagers-backend in the terminal shell.
 
