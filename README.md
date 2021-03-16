@@ -1,12 +1,15 @@
 # review-the-villagers
 This app allows you to review and rate your favorite and not so favorite "Animal Crossing New Horizon" villagers! 
 
+
 Have fun!
 
 ## Start up
 To use this application please fork and clone this repository and open in your machine's text editor.
 
-In your terminal shell type the following:
+First cd into villagers-backend in the terminal shell.
+
+Next in your terminal shell type the following:
 
 "bundle install"
 
@@ -20,7 +23,6 @@ to seed the  database please type the following into terminal shell:
 
 "rails db:seed"
 
-next cd into villagers-backend in the terminal shell.
 
 To connect to a local host, please type the following command:
 
