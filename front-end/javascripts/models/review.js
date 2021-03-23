@@ -207,7 +207,7 @@ class Review {
     
       let id = e.target.dataset.id;
     
-      const data = await Api.delete(Api.baseUrl + "/reviews/" + id);
+      const data = await Api.delete("/reviews/" + id);
     
       Review.all = Review.all.filter(function(review){
         return review.id !== data.id;
