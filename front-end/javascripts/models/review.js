@@ -182,7 +182,7 @@ class Review {
       
           // gets the index of the review selected
           let idx = Review.all.indexOf(b);
-      
+
           // updates the index value with the newly updated review
           Review.all[idx] = new Review(data);
           
