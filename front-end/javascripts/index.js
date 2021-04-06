@@ -33,3 +33,4 @@ function resetFormInputs() {
    formLinkEvent();
    reviewsLinkEvent();
  });
+
