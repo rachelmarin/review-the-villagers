@@ -1,5 +1,4 @@
-  
-/** Global Variables **/
+  /** Global Variables **/
 
 /** Node Getters **/
 
@@ -10,4 +9,5 @@ const villagerInput = () => document.getElementById("villager");
 const form = () => document.getElementById("form");
 const formLink = () => document.getElementById("form-link");
 const reviewsLink = () => document.getElementById("reviews-link");
+const inputSearch = () => document.querySelector("#search")
 let villagers = []

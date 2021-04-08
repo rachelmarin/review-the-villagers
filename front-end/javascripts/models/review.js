@@ -46,7 +46,6 @@ class Review {
       div.appendChild(deleteLink);
       div.appendChild(document.createElement("br"));
 
-    
       reviewsDiv.appendChild(div);
     }
     
@@ -191,7 +190,7 @@ class Review {
         })
     
     }
-  
+
     static async getReviews() {
       // fetch to the rails api, reviews index. Grab the reviews
       // populate the main div with the reviews
@@ -215,4 +214,19 @@ class Review {
     
       Review.renderReviews();
     }
+
+    static searchBar() {
+      inputSearch().addEventListener("submit", this.inputFilter)
+    }
+  
+    static inputFilter() {
+      const searchString = document.querySelector('#search').value 
+      const filtered = Review.all.filter(review => review.villager.name.includes(searchString))
+      document.querySelector("#reviews").innerHTML = ""
+      filtered.forEach(review => review.render())
+  
+    }
   }
+
+    
+

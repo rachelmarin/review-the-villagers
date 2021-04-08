@@ -27,10 +27,11 @@ function resetFormInputs() {
    villagers = await Api.get("/villagers")
  }
  
- document.addEventListener("DOMContentLoaded", function () {
+ 
    Review.getReviews();
    getVillagers();
    formLinkEvent();
    reviewsLinkEvent();
- });
+   Review.searchBar();
+
 
