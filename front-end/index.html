@@ -4,6 +4,7 @@
     <style>
 body {background-color: rgba(164, 255, 213, 0.849);} 
 .bordered {text-align: center;}
+.filterbox {text-align: right;}
 h1 {text-align: center;}
 p {text-align: center;}
 div {text-align: center;}
@@ -17,15 +18,18 @@ li {text-align: center;}
   <body>
     <h1>Review The Villagers</h1>
     <ul style="list-style: none; margin: 0; padding: 0;">
-         
-      <li><form><input id="search"></input><button type="submit">Submit</button></form></li>
-         
+      
+      
       <li><a href="#" id="form-link">Create Review</a></li>
       <li><a href="#" id="reviews-link">Reviews</a></li>
-     
+      
       <!-- linking javscript -->
-    
+      
     </ul>
+    <div class="filterbox">
+      <input id="search" placeholder="search" class="me-2"></input>
+      <button onClick="Review.inputFilter()" class="btn btn-outline-success" type="submit">Search</button>
+    </div>
     <br><br>
     <div class="bordered" id="main" ></div>
 

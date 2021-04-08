@@ -32,6 +32,6 @@ function resetFormInputs() {
    getVillagers();
    formLinkEvent();
    reviewsLinkEvent();
-   Review.searchBar();
+   
 
 

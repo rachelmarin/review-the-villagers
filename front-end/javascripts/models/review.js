@@ -215,13 +215,9 @@ class Review {
       Review.renderReviews();
     }
 
-    static searchBar() {
-      inputSearch().addEventListener("submit", this.inputFilter)
-    }
-  
     static inputFilter() {
       const searchString = document.querySelector('#search').value 
-      const filtered = Review.all.filter(review => review.villager.name.includes(searchString))
+      const filtered = Review.all.filter(review => review.villager.name.toLowerCase().includes(searchString))
       document.querySelector("#reviews").innerHTML = ""
       filtered.forEach(review => review.render())
   
