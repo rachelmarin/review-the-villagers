@@ -217,7 +217,7 @@ class Review {
 
     static inputFilter() {
       const searchString = document.querySelector('#search').value 
-      const filtered = Review.all.filter(review => review.villager.name.toLowerCase().includes(searchString))
+      const filtered = Review.all.filter(review => review.villager.name.toLowerCase().includes(searchString.toLowerCase()))
       document.querySelector("#reviews").innerHTML = ""
       filtered.forEach(review => review.render())
   
